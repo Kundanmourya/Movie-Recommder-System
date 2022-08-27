@@ -1,4 +1,3 @@
-import bz2file as bz2
 import pickle
 import streamlit as st
 import pandas as pd
