@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import requests
 
-import MovieRecommenderSystem
+#import MovieRecommenderSystem
 
 
 def fetch_poster(movie_id):
