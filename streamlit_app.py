@@ -1,10 +1,12 @@
-import MovieRecommenderSystem
+import sys
 import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
 
+sys.path.append('MovieRecommenderSystem.py')
+from MovieRecommenderSystem import similar
 
 
 def fetch_poster(movie_id):
