@@ -97,7 +97,7 @@ vector = cv.fit_transform(new['tags']).toarray()
 
 vector.shape
 
-from sklearn.metrics.pairwise import cosine_similarity
+#from sklearn.metrics.pairwise import cosine_similarity
 
 similarity = cosine_similarity(vector)
 
