@@ -1,2 +1,2 @@
 # Movie-Recommder-System
-https://kundanmourya-movie-recommder-system-streamlit-app-fx2y1f.streamlitapp.com/
+https://kundanmourya-movie-recommender-system-streamlit-app-90wbb4.streamlitapp.com/
