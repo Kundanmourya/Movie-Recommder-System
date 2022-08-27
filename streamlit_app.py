@@ -6,7 +6,7 @@ import numpy as np
 import requests
 
 sys.path.append('MovieRecommenderSystem.py')
-from MovieRecommenderSystem import similar
+
 
 
 def fetch_poster(movie_id):
