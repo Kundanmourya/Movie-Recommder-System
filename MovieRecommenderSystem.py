@@ -110,5 +110,5 @@ def recommend(movie):
     for i in distances[1:6]:
         print(new.iloc[i[0]].title)
 
-def similar (pickle):
-    pickle.dump(similarity,open('similarity.pkl','wb'))
+
+pickle.dump(similarity,open('similarity.pkl','wb'))
