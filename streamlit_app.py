@@ -5,8 +5,9 @@ import pandas as pd
 import numpy as np
 import requests
 
-sys.path.append('MovieRecommenderSystem.py')
-
+print()
+print(sys.path)
+print()
 
 
 def fetch_poster(movie_id):
@@ -35,7 +36,7 @@ def recommend(movie):
 
 st.header('Movie Recommender System')
 movies = pickle.load(open('movie_list.pkl','rb'))
-similarity = pickle.load(open('similarity.pkl','rb'))
+#similarity = pickle.load(open('similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
