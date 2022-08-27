@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import pickle
 
 
 movies = pd.read_csv("tmdb_5000_movies.csv")
@@ -109,6 +110,4 @@ def recommend(movie):
     for i in distances[1:6]:
         print(new.iloc[i[0]].title)
 
-
-
-recommend('Gandhi')
+pickle.dump(similarity,open('similarity.pkl','wb'))

@@ -29,7 +29,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-pickle.dump(MovieRecommenderSystem.similarity,open('similarity.pkl','wb'))
+#pickle.dump(MovieRecommenderSystem.similarity,open('similarity.pkl','wb'))
 
 st.header('Movie Recommender System')
 movies = pickle.load(open('movie_list.pkl','rb'))
