@@ -88,7 +88,7 @@ new = movies.drop(columns=['overview','genres','keywords','cast','crew'])
 new['tags'] = new['tags'].apply(lambda x: " ".join(x))
 #new.head()
 
-#from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 
 cv = CountVectorizer(max_features=5000, stop_words='english')
 
@@ -97,7 +97,7 @@ vector = cv.fit_transform(new['tags']).toarray()
 
 vector.shape
 
-#from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity
 
 similarity = cosine_similarity(vector)
 
